@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-sky-700;
+        @apply font-sans;
+        @apply text-4xl;
+    }
+    h2, h3 {
+        @apply text-neutral-700;
+        @apply font-sans;
+        @apply font-light;
+        @apply font-thin;
+    }
+    body {
+        @apply m-8;
+    }
+    body, input[type="text"], button {
+        @apply text-neutral-800;
+        @apply font-serif;
+    }
+    button {
+        @apply bg-neutral-200;
+        @apply border-none;
+        @apply rounded;
+        @apply cursor-pointer;
+        @apply text-neutral-900;
+        @apply text-xl;
+        @apply p-4;
+        @apply my-4;
+        @apply mr-4;
+        @apply hover:bg-neutral-900;
+        @apply disabled:bg-neutral-200;
+        @apply disabled:text-neutral-400;
+        @apply disabled:cursor-auto;
+    }
+    * {
+        @apply font-mono;
+    }
+}
